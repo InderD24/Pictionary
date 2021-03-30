@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "849468351989",
+    "project_id": "pixapp-5c499",
+    "storage_bucket": "pixapp-5c499.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849468351989:android:05fe63e3068c701a32ecbc",
+        "android_client_info": {
+          "package_name": "com.example.pictionary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849468351989-kl1e46br6575ll7rtlmr8dct2112bi08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW6KwfGvr1LMoFBkCHBIbMDSH1_UhupTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849468351989-kl1e46br6575ll7rtlmr8dct2112bi08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
