@@ -10,12 +10,20 @@
     android:orientation="vertical"
     android:layout_weight="1"
     android:padding="5dp"
+    android:background="@drawable/background"
     tools:context=".MenuActivity">
+   
+
+    <ImageView
+        android:layout_width="237dp"
+        android:layout_height="230dp"
+        android:src="@drawable/pixtureit" />
 
     <mehdi.sakout.fancybuttons.FancyButton
-        android:id="@+id/btn_StartGamer"
+        android:id="@+id/btn_friendsMenu"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:onClick="friendsMenu_FriendsMenu"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="20dp"
@@ -24,14 +32,31 @@
         fancy:fb_borderWidth="2dp"
         fancy:fb_defaultColor="#4169E1	"
         fancy:fb_focusColor="#9bd823"
-        fancy:fb_fontIconResource="&#xf04b;"
         fancy:fb_iconPosition="left"
         fancy:fb_radius="30dp"
-        fancy:fb_text="Start Game"
+        fancy:fb_text="Play now"
         fancy:fb_textColor="#FFFFFF"
-        fancy:fb_textSize="35sp"
-        android:onClick="startGame_new"
-        />
+        fancy:fb_textSize="35sp">
 
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_JoinRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:onClick="aboutUs_AboutUs"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_defaultColor="#4169E1	"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="About us"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_textSize="35sp"/>
 
 </LinearLayout>
