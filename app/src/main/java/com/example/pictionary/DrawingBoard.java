@@ -12,4 +12,6 @@ public class DrawingBoard extends AppCompatActivity {
         PaintView paintView = new PaintView(this);
         setContentView(paintView);
     }
+
+
 }
