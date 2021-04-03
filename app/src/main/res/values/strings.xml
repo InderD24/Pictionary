@@ -2,4 +2,6 @@
     <string name="app_name">Pictionary</string>
     <string name="back">Back</string>
     <string name="about">About</string>
+    <string name="welcome">Welcome</string>
+    <string name="if_you_can_think_it_you_can_pixture_it">If you can think it, You can Pixture it</string>
 </resources>

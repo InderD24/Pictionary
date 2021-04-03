@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void friendsMenu_FriendsMenu(View view) {
-        Intent intent = new Intent(this, DrawingBoard.class);
+        Intent intent = new Intent(this, LoginScreen.class);
         startActivity(intent);
         finish();
 

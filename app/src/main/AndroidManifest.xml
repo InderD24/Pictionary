@@ -13,11 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pictionary">
-        <activity android:name=".AboutUsActivity"></activity>
+        <activity android:name=".LoginScreen"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".AboutUsActivity" />
         <activity android:name=".DrawingBoard" />
-        <activity android:name=".LoginActivity2" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".OnlineActivity" />
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden"
