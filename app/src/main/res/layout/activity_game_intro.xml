@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameIntro">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B">
+
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz "
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/quiznum_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/question_textview"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:padding="16dp"
+                android:textSize="28sp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/quiz_image"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:background="#B08BF3"
+                android:padding="10dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/pixtureit" />
+
+            <LinearLayout
+                android:id="@+id/answers_layout"
+                android:layout_margin="60dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:background="#710c80"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit My Answers" />
+
+
+
+</LinearLayout>

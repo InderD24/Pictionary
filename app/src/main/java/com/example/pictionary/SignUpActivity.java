@@ -37,7 +37,7 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 rootNode = FirebaseDatabase.getInstance();
-                reference = rootNode.getReference();
+                reference = rootNode.getReference("users");
 
                 //Get all the values
                 String name = regName.getEditText().getText().toString();

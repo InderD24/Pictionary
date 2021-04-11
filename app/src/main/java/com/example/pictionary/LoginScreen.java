@@ -71,7 +71,7 @@ public class LoginScreen extends AppCompatActivity {
         final String userEnteredUsername = username.getEditText().getText().toString().trim();
         final String userEnteredPassword = password.getEditText().getText().toString().trim();
 
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
 
         Query checkUser = reference.orderByChild("username").equalTo(userEnteredUsername);
 
@@ -91,7 +91,7 @@ public class LoginScreen extends AppCompatActivity {
                         password.setError(null);
                         password.setErrorEnabled(false);
 
-                        Intent intent = new Intent(getApplicationContext(), DrawingBoard.class);
+                        Intent intent = new Intent(getApplicationContext(), GameIntro.class);
                         startActivity(intent);
                     }
                     else {
