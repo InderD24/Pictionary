@@ -11,6 +11,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -40,6 +41,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 
 public class GameIntro extends AppCompatActivity {
@@ -58,10 +61,43 @@ public class GameIntro extends AppCompatActivity {
 
     private Questions mQuestions = new Questions();
 
+    TextView timer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_intro);
+
+        timer = findViewById(R.id.timer);
+
+        long duration = TimeUnit.MINUTES.toMillis(1);
+
+        new CountDownTimer(duration, 1000) {
+
+            @Override
+            public void onTick(long millisUntilFinished) {
+                String sDuration = String.format(Locale.ENGLISH, "%02d : %02d"
+                        , TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)
+                        , TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)-
+                                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)));
+                timer.setText(sDuration);
+            }
+
+            @Override
+            public void onFinish() {
+                timer.setVisibility(View.GONE);
+                Toast.makeText(getApplicationContext(), "Time is up",Toast.LENGTH_SHORT).show();
+                //Result Activity
+                Intent intent_result = new Intent(GameIntro.this, ResultActivity.class);
+                intent_result.putExtra("totalQuestions",mQuestions.getLength());
+                intent_result.putExtra("finalScore",mScore);
+                startActivity(intent_result);
+
+                QuestionNum = 0;
+                mQuizNum = 0;
+                mScore = 0;
+            }
+        }.start();
 
         mQuestionView = findViewById(R.id.question_textview);
         mQuizNumView = findViewById(R.id.quiznum_textview);
