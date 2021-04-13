@@ -24,7 +24,14 @@ public class Questions {
             {"Tissue","Towel","Cloth"},
             {"Paper","Whiteboard","Bulletin Board"},
             {"Vacuum Cleaner","Mop","Fancy Broom"},
-            {"Cell","Battery","Mobile"}
+            {"Cell","Battery","Mobile"},
+            {"Cereal", "Ear Wax", "Dry Honey"},
+            {"Cigarette", "Twig", "Apple"},
+            {"Ant Tunnel", "Oreo", "Fish Bowl"},
+            {"Light Bulb", "Pen", "Soldering Iron"},
+            {"Vents", "Razor", "Hidden Camera"},
+            {"Monkey Wrench","Chain", "Lighter"},
+            {"Dog", "Bear", "Deer"}
 
     };
 
@@ -32,11 +39,25 @@ public class Questions {
             "q1",   //binder
             "q2",   //towel
             "q3",   //whiteboard
-            "q4",   //vaccum cleaner
+            "q4",   //vacuum cleaner
             "q5",   //battery
+            "q6",   //cereal
+            "q7",   //apple
+            "q8",   //Oreo Cookie
+            "q9",   //pen
+            "q10",  //razor
+            "q11",  //lighter
+            "q12"   //dog
     };
 
     private String mQuestionsType[] = {
+            "radiobutton",
+            "radiobutton",
+            "radiobutton",
+            "radiobutton",
+            "radiobutton",
+            "radiobutton",
+            "radiobutton",
             "radiobutton",
             "radiobutton",
             "radiobutton",
@@ -49,7 +70,14 @@ public class Questions {
             "Towel",
             "Whiteboard",
             "Vacuum Cleaner",
-            "Battery"
+            "Battery",
+            "Cereal",
+            "Apple",
+            "Oreo Cookie",
+            "Pen",
+            "Razor",
+            "Lighter",
+            "Dog"
 
 
     };
